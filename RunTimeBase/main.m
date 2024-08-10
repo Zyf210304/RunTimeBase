@@ -57,6 +57,21 @@ int main(int argc, const char * argv[]) {
         //类 在元类里面就是一个实例对象
         //类方法在元类里 就是元类的实例方法
         
+        /*
+         objc_msgSend  汇编部分流程
+         
+         CacheLookup
+         calls imp
+         objc_msgSend_uncached
+         MethodTableLookup
+         _class_lookupMethodAndLoadCache3
+         汇编跳出来 进入C C++
+         
+         */
+        
+        
+        
+        
     }
     return 0;
 }
